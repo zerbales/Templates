@@ -1,0 +1,24 @@
+﻿@page
+@model Template.RazorWebApp.Pages.AddStudentModel
+
+ <form method="post">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div class="row">
+        <div class="col-sm-2">Name:</div>
+        <div class="col">
+            <input asp-for="Student!.Name" />
+            <span asp-validation-for="Student!.Name"></span>
+        </div>
+        <div class="col-sm-2">Surname:</div>
+        <div class="col">
+            <input asp-for="Student!.Surname" />
+            <span asp-validation-for="Student!.Surname"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <input type="submit" />
+        </div>
+    </div>
+</form>
+
