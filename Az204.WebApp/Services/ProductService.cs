@@ -2,7 +2,7 @@
 using System.Data.SqlClient;
 namespace Az204.WebApp.Services
 {
-    public class ProductService
+    public class ProductService : IProductService
     {
         private static string db_source = "zerbax.database.windows.net";
         private static string db_user = "zerbax";
