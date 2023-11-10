@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.WebAPI", "Template
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.RazorWebApp", "Template.RazorWebApp\Template.RazorWebApp.csproj", "{79639B44-90C9-4D9F-85B2-A2CABE13D1F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Az204.WebApp", "Az204.WebApp\Az204.WebApp.csproj", "{7853580A-1D97-4212-B3D0-A900D59B2C1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Az204.WebApp", "Az204.WebApp\Az204.WebApp.csproj", "{7853580A-1D97-4212-B3D0-A900D59B2C1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Az204.Function", "Az204.Function\Az204.Function.csproj", "{4293D158-0E94-496A-BC11-7E8946157D94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{7853580A-1D97-4212-B3D0-A900D59B2C1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7853580A-1D97-4212-B3D0-A900D59B2C1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7853580A-1D97-4212-B3D0-A900D59B2C1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4293D158-0E94-496A-BC11-7E8946157D94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4293D158-0E94-496A-BC11-7E8946157D94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4293D158-0E94-496A-BC11-7E8946157D94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4293D158-0E94-496A-BC11-7E8946157D94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

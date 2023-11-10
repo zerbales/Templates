@@ -1,5 +1,7 @@
-var builder = WebApplication.CreateBuilder(args);
+using Az204.WebApp.Services;
 
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddSingleton<IProductService, ProductService>();
 // Add services to the container.
 builder.Services.AddRazorPages();
 

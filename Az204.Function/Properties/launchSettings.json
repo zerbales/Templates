@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Az204.Function": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7286",
+      "launchBrowser": false
+    }
+  }
+}

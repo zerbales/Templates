@@ -9,11 +9,15 @@ namespace Az204.WebApp.Pages
     {
         private readonly ILogger<IndexModel> _logger;
         public List<Product> Products { get; set; }
+        public IProductService _productService { get; }
 
+        public IndexModel(IProductService productService)
+        {
+            _productService = productService;
+        }
         public void OnGet()
         {
-            ProductService ps = new ProductService();
-            Products = ps.GetProducts();
+            Products =  _productService.GetProducts();
 
         }
     }

@@ -8,16 +8,16 @@ namespace Az204.WebApp.Services
         private static string db_user = "zerbax";
         private static string db_password = "PasswordAz204_";
         private static string db_db = "zerbax-db";
+        private readonly IConfiguration configuration;
 
+        public ProductService(IConfiguration configuration)
+        {
+            this.configuration = configuration;
+        }
         private SqlConnection GetConnection()
         {
-            var _builder = new SqlConnectionStringBuilder();
-            _builder.DataSource = db_source;
-            _builder.UserID = db_user;
-            _builder.Password = db_password;
-
-            _builder.InitialCatalog = db_db;
-            return new SqlConnection(_builder.ConnectionString);
+            
+            return new SqlConnection(this.configuration.GetConnectionString("SQLConnection"));
         }
         public List<Product> GetProducts() { 
             SqlConnection conn = GetConnection();

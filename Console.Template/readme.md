@@ -45,3 +45,40 @@ Create Table Products(
 
 Insert Into Products(ProductID, ProductName, Quantity) Values (1, 'Mobile', 100)
 Insert Into Products(ProductID, ProductName, Quantity) Values (2, 'Laptop', 200)
+
+-----------------------------------
+DOCKER ON VM
+Install docker on VM 
+Create dockerfile in project
+Build image
+sudo docker build -t (name) .
+Run container
+sudo docker run --name (name-container) -p 80:80 -d (name-image)
+List container running
+sudo docker ps
+Stop container
+sudo docker stop (id-container)
+List images
+sudo docker images
+-----------------------------------
+MYSQL
+CREATE DATABASE zerbaxdb;
+
+USE zerbaxdb;
+Create Table Products(
+	ProductId int,
+	ProductName varchar(1000),
+	Quantity int
+);
+
+INSERT Into Products(ProductID, ProductName, Quantity) Values (1, 'Mobile', 100);
+Insert Into Products(ProductID, ProductName, Quantity) Values (2, 'Laptop', 200);
+
+sudo docker run --name=mysql-instance -p 3306:3306 --restart on-failure -d -e MYSQL_ROOTPASSWORD=PasswordAz204_ mysql
+
+----------------------------------
+AZ POWERSHELL
+install version 7
+install az powershell module
+
+
